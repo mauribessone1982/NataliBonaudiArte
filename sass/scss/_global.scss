@@ -6,6 +6,9 @@
   body{
     font-family: $font_site;
   }
+.fontMenu{
+  color :black;
+}
 
 
   h1{
@@ -14,8 +17,8 @@
   }
   
   .menu{
-    background-color: $color_H_F;
-    background-image: linear-gradient(to top,#ffd001,#ff1e00);
+    background-color: #FFE420;
+   background-image: linear-gradient(to top,#ffd001,#ff1e00);
   }
 
 .menu__logo{
