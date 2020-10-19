@@ -10,29 +10,41 @@
   color :black !important;
 }
 
-
+/*
   h1{
     text-align: center;
     margin: 30px 0 50px;
   }
-
+*/
+.parrafo_logo{
+  font-family: $font_site;
+  color: #f8c000;
+  font-weight: bold;
+  font-size: 25px;
+}
   .menu{
-    background-color :white;
-   /* border-top: black solid 3px;*/
-    border-bottom: black solid 3px;
+   background-color :white;
+  /* border-top: black solid 3px;*/
+   border-bottom: #f8c000 solid 2px;
   }
 
 .menu__logo{
-  width:180px;
+  width:100px;
+}
+
+.seleccionObras{
+  width:280px;
 }
 .menu li{
   padding-left: 5px;
   padding-right: 5px;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 
 .foterPage{
-  border-top: black solid 3px;
+  /*border-top:  #f8c000 solid 3px;*/
   background-color :white;
   }
   .foter_logo{
@@ -48,6 +60,7 @@
 
 
 .social{
+   margin: 5px;
   padding-right: 15px;
 }
 .contacto{
@@ -56,27 +69,66 @@
 .sectionBody{
   padding: 5px;
 }
+/* modulo sobre mi*/
 .sectionSobreMi{
     padding: 5px;
   }
+.sectionSobreMi_h1{
+  text-align: left;
+  margin: 20x 0 20px;
+  font-family: $font_site;
+  color: #f8c000;
+  font-weight: bold;
+  font-size: 30px  !important ;
+}
+.TitulosGaleria_h1{
+  @extend .sectionSobreMi_h1;
+}
+.TitulosContacto_h1{
+  @extend .sectionSobreMi_h1;
+}
+.sectionSobreMi__frase{
+  text-align:center;
+  margin: 20px 0 10px;
+  font-family: $font_site;
+  color: #f8c000;
+  font-weight: bold;
+  font-size: 30px;
+}
+
 .sectionSobreMi__img{
     float: right    ;
     vertical-align: middle;
-    width: 500px;
+    width: 300px;
     margin: 5px 10px;
     padding-left: 30px;
 
 }
+
+/*
 .sectionSobreMi__img:hover{
   transform: scaleX(-1)
-}
+}*/
   
 .sectionSobreMi__parrafo{
     color: $color_font;
     text-align: justify;
-    font-family: 'Pacifico', cursive;
+    font-family: $font_site;
   }
-
+/* modulo Servicios*/
+.sectionServicio{
+    padding: 5px;
+  }
+.sectionServicio_img{
+  float: left    ;
+  vertical-align: middle;
+  width: 500px;
+  margin: 5px 10px;
+  padding-left: 30px;
+} 
+.sectionServicioParrafo{
+  @extend .sectionSobreMi__parrafo;
+}
   .sectionNoticia{
     @extend .sectionSobreMi;
   }
@@ -92,6 +144,9 @@
     @extend .sectionSobreMi__parrafo;
   }
 
+.notiEvento{
+  padding: 40px;
+}
 
 
   .gallery{
@@ -130,7 +185,7 @@
   .carousel-indicators li, .carousel a{
     cursor: pointer;
   }
-  
+ 
 .carousel-inner{
     position: relative;
     width: 100%;
@@ -141,33 +196,13 @@
       height: 100%;
   }
 
-.clearfix:after {
+s.clearfix:after {
     content: "";
     display: table;
     clear: both;
   }
 
-  // utilizo para colocar los border al  menu y foter
-  @mixin bordered($color, $width) {
-    
-    @if $color == orange {
-      border: $width solid  #191de2;
-  } @else if $color == red {
-        border: $width solid  #006400;
-  } @else if $color == yellow {
-        border: $width solid  #010d01;
-  } @else { // $BgCol es blue
-      border-color: #bfc9bf;
-  }
-  }
   
-  .myMenu {
-    @include bordered($color, 1px);  // Call mixin with two values
-  }
-  
-  .myFoterPage{
-    @include bordered($color, 2px); // Call mixin with two values
-  }
 
 //animaciones y transiciones
 .sobreMi{
