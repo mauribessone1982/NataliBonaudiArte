@@ -2,13 +2,21 @@
     margin: 0;
     padding: 0;
   }
-   
+  
+  .linea {
+    border-top: 3px solid #f8c000;
+    height: 2px;
+    padding: 0;
+    margin: 20px auto 0 auto;
+  }
+
   body{
     font-family: $font_site;
   }
 .fontMenu{
-  color :black !important;
+  color :black ;
 }
+
 
 /*
   h1{
@@ -23,7 +31,7 @@
   font-size: 25px;
 }
   .menu{
-   background-color :white;
+   background-color :#f8c000;
   /* border-top: black solid 3px;*/
    border-bottom: #f8c000 solid 2px;
   }
@@ -42,7 +50,11 @@
   font-weight: bold;
 }
 
-
+footer{
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: #f8c000 solid 1px;
+}
 .foterPage{
   /*border-top:  #f8c000 solid 3px;*/
   background-color :white;
@@ -73,20 +85,15 @@
 .sectionSobreMi{
     padding: 5px;
   }
-.sectionSobreMi_h1{
+.titulos{
   text-align: left;
-  margin: 20x 0 20px;
+  margin: 30x 0 20px;
   font-family: $font_site;
   color: #f8c000;
   font-weight: bold;
   font-size: 30px  !important ;
 }
-.TitulosGaleria_h1{
-  @extend .sectionSobreMi_h1;
-}
-.TitulosContacto_h1{
-  @extend .sectionSobreMi_h1;
-}
+
 .sectionSobreMi__frase{
   text-align:center;
   margin: 20px 0 10px;
@@ -148,9 +155,9 @@
   padding: 40px;
 }
 
-
   .gallery{
     margin: 10px 50px;
+    text-align: center;
   }
 .gallery img{
     width: 230px;
@@ -196,6 +203,39 @@
       height: 100%;
   }
 
+.image {
+  opacity: 1;
+  display: block;
+  /*width: 100%;
+  height: auto;*/
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.fadeBox:hover .image {
+  opacity: 0.3;
+}
+
+.fadeBox:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #f8c000;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
 s.clearfix:after {
     content: "";
     display: table;

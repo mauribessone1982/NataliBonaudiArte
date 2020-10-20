@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<header>
-            <div   class="container">
+            <div class="container">
                 <div class="row ">
                     <div class="col-sm-6 ">
                         <div class="row">
@@ -77,67 +77,84 @@
 				</ul>
 			</div>
 		</nav>
-		<section class="sectionBody">
-			<div id="carrucelPortada" class="carousel slide" data-ride="carousel">
+		<section class="sectionBody">		
+			<div class="container">
+				<div id="carrucelPortada" class="carousel slide" data-ride="carousel">
 
-				<!-- Indicators -->
-				<ul class="carousel-indicators">
-				  <li data-target="#carrucelPortada" data-slide-to="0" class="active"></li>
-				  <li data-target="#carrucelPortada" data-slide-to="1"></li>
-				  <li data-target="#carrucelPortada" data-slide-to="2"></li>
-				</ul>
-				
-				<!-- The slideshow -->
-				<div class="carousel-inner">
-				  <div class="carousel-item active">
-					<img src="./img/Artista/Artista_1.jpg" alt="ImgArtista1" width="1100" height="500">
-				  </div>
-				  <div class="carousel-item">
-					<img src="./img/Artista/Artista_2.jpg" alt="ImgArtista2" width="1100" height="500">
-				  </div>
-				  <div class="carousel-item">
-					<img src="./img/Artista/Artista_3.jpg" alt="ImgArtista3" width="1100" height="500">
-				  </div>
+					<!-- Indicators -->
+					<ul class="carousel-indicators">
+					  <li data-target="#carrucelPortada" data-slide-to="0" class="active"></li>
+					  <li data-target="#carrucelPortada" data-slide-to="1"></li>
+					  <li data-target="#carrucelPortada" data-slide-to="2"></li>
+					</ul>
+					
+					<!-- The slideshow -->
+					<div class="carousel-inner">
+					  <div class="carousel-item active">
+						<img src="./img/Artista/Artista_1.jpg" alt="ImgArtista1" width="1100" height="500">
+					  </div>
+					  <div class="carousel-item">
+						<img src="./img/Artista/Artista_2.jpg" alt="ImgArtista2" width="1100" height="500">
+					  </div>
+					  <div class="carousel-item">
+						<img src="./img/Artista/Artista_3.jpg" alt="ImgArtista3" width="1100" height="500">
+					  </div>
+					</div>
+					
+					<!-- Left and right controls -->
+					<a class="carousel-control-prev" href="#carrucelPortada" data-slide="prev">
+					  <span class="carousel-control-prev-icon"></span>
+					</a>
+					<a class="carousel-control-next" href="#carrucelPortada" data-slide="next">
+					  <span class="carousel-control-next-icon"></span>
+					</a>
 				</div>
-				
-				<!-- Left and right controls -->
-				<a class="carousel-control-prev" href="#carrucelPortada" data-slide="prev">
-				  <span class="carousel-control-prev-icon"></span>
-				</a>
-				<a class="carousel-control-next" href="#carrucelPortada" data-slide="next">
-				  <span class="carousel-control-next-icon"></span>
-				</a>
-			</div>
 		</section>	
 		<section >            
-			<h1>Obras</h1>
-			<div class="container-fluid">
+			<h1 class="titulos text-center p-3">Obras</h1>
+			<div class="container">
 				<div class="row">
 					<div class="col-sm-4">
-						<div class="d-flex justify-content-center">
+						<div class="d-flex justify-content-center fadeBox">
 							<a href="./html/dibujos.html">
-								<img src="./img/Obras/DIBUJO_LOGO.png" alt="dibujo" class="img-fluid seleccionObras">
+								<img src="./img/Obras/DIBUJO_LOGO.png" alt="dibujo" class="img-fluid seleccionObras image">
 							</a> 
+							<div class="middle">
+								<div class="text">
+									<a href="./html/pintura.html">DIBUJO</a>
+								</div>
+							</div>
 						</div>
+						
 					</div>
 					<div class="col-sm-4 ">
-						<div class="d-flex justify-content-center">
+						<div class="d-flex justify-content-center fadeBox">
 							<a href="./html/pintura.html">
-								<img src="./img/Obras/PINTURA_LOGO.png" alt="pintura" class="img-fluid seleccionObras">
+								<img src="./img/Obras/PINTURA_LOGO.png" alt="pintura" class="img-fluid seleccionObras image">
 							</a> 
+							<div class="middle">
+								<div class="text">
+									<a href="./html/pintura.html">PINTURA</a>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="col-sm-4">
-						<div class="d-flex justify-content-center">
+						<div class="d-flex justify-content-center fadeBox">
 							<a href="./html/fotografias.html">
-								<img src="./img/Obras/FOTOGRAFIA_LOGO.png" alt="fotografia" class="img-fluid seleccionObras">
+								<img src="./img/Obras/FOTOGRAFIA_LOGO.png" alt="fotografia" class="img-fluid seleccionObras image">
 							</a> 
+							<div class="middle">
+								<div class="text">
+									<a href="./html/pintura.html">FOTOGRAFIA</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>   
 		</section>
-		<footer>
+		<footer >
             <div class=" foterPage " >
                 <div class="d-flex justify-content-center">
                     <a class="navbar-brand" href="./index.html">
@@ -172,5 +189,6 @@
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<script type="text/javascript" src="./js/bootstrap.js"></script>
+		
 	</body>
 </html>
