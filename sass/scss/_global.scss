@@ -17,13 +17,6 @@
   color :black ;
 }
 
-
-/*
-  h1{
-    text-align: center;
-    margin: 30px 0 50px;
-  }
-*/
 .parrafo_logo{
   font-family: $font_site;
   color: #f8c000;
@@ -31,9 +24,8 @@
   font-size: 25px;
 }
   .menu{
-   background-color :#f8c000;
-  /* border-top: black solid 3px;*/
-   border-bottom: #f8c000 solid 2px;
+   background-color :#ffe48c;
+   margin-bottom: 15px;
   }
 
 .menu__logo{
@@ -53,7 +45,7 @@
 footer{
   margin-top: 10px;
   padding-top: 10px;
-  border-top: #f8c000 solid 1px;
+  
 }
 .foterPage{
   /*border-top:  #f8c000 solid 3px;*/
@@ -87,7 +79,7 @@ footer{
   }
 .titulos{
   text-align: left;
-  margin: 30x 0 20px;
+  margin: 30x 0 30px;
   font-family: $font_site;
   color: #f8c000;
   font-weight: bold;
@@ -231,10 +223,14 @@ footer{
 }
 
 .text {
-  background-color: #f8c000;
+  background-color: transparent;
   color: white;
-  font-size: 16px;
+  font-size: 30px;
   padding: 16px 32px;
+}
+
+.text a{
+  color:black;
 }
 s.clearfix:after {
     content: "";
@@ -259,10 +255,10 @@ s.clearfix:after {
 }
 
 .gracias{
-  color:#191970;
+  color:black;
   padding: 0.5em;
-  text-decoration: underline;
   text-align: center;
+  font-size: 25px;
   animation-duration: 4s;
   animation-name: mostrarGracias;
 }
