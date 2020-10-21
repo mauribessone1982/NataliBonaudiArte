@@ -19,7 +19,7 @@
 
 .parrafo_logo{
   font-family: $font_site;
-  color: #f8c000;
+  color: $color_font_titulos;
   font-weight: bold;
   font-size: 25px;
 }
@@ -81,7 +81,7 @@ footer{
   text-align: left;
   margin: 30x 0 30px;
   font-family: $font_site;
-  color: #f8c000;
+  color:$color_font_titulos;
   font-weight: bold;
   font-size: 30px  !important ;
 }
@@ -90,7 +90,7 @@ footer{
   text-align:center;
   margin: 20px 0 10px;
   font-family: $font_site;
-  color: #f8c000;
+  color: $color_font_titulos;
   font-weight: bold;
   font-size: 30px;
 }
@@ -104,10 +104,9 @@ footer{
 
 }
 
-/*
-.sectionSobreMi__img:hover{
-  transform: scaleX(-1)
-}*/
+.contacto a{
+  color: black;
+}
   
 .sectionSobreMi__parrafo{
     color: $color_font;
